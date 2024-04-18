@@ -1,0 +1,85 @@
+.container{
+    display: flex; 
+    justify-content: space-between; 
+    width: 85vw;
+    text-align: ce;
+    margin: 10vh 1vw 0 6vw;
+    padding: 1vw 1vw 0 0;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    color: black;
+    cursor: pointer;
+    
+    border: 1px solid #ccc;
+}
+
+.container h2{
+    text-align: left;
+    margin: 0;
+}
+
+.containerOne{
+    padding-left: 1vw;
+    width: 25vw;
+}
+
+.containerTwo{
+    width: 25vw;
+}
+
+.containerTwo p{
+    margin-top: 0px;
+}
+
+.containerTwo label{
+    margin-bottom: 50px;
+    
+    width: 1px;
+}
+
+.inputTwo {
+    display: flex;
+    align-items: flex-start; /* Alinea verticalmente en la parte superior */
+    justify-content: flex-start; /* Alinea horizontalmente en la izquierda */
+    height: 8.8vw;
+    word-wrap: break-word;
+}
+
+.miCheckBox{
+    width: 20px;
+    margin-top: 20px;
+
+}
+
+.containerCheckBox{
+    display: inline-flex; 
+    align-items: center;
+    justify-content: space-around;
+    height: 5vh;
+    
+    
+}
+
+.containerCheckBox label{
+    margin-top: 5vh;
+    margin-left: 0.5vw;
+    
+    width: 8vw;
+}
+
+.containerTwo button{
+    margin: 40vh 0 0 0.1vw;
+    width: 23.8vw;
+    height: 6vh;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #3625F8;
+    color: white;
+}
+
+
+.telefono{
+    padding-top: 25px;
+}
