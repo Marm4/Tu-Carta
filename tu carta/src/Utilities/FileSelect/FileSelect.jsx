@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 
-function FileSelect() {
+function FileSelect({ onSelectedImage }) {
   const [imagenSeleccionada, setImagenSeleccionada] = useState(null);
 
   const manejarSeleccionArchivo = (event) => {
     const archivo = event.target.files[0];
     if (archivo) {
-      // Aquí podrías realizar cualquier acción que desees con el archivo seleccionado,
-      // como cargarlo en un servidor o mostrarlo en la interfaz de usuario.
       setImagenSeleccionada(URL.createObjectURL(archivo));
+      onSelectedImage(archivo);
     }
   };
 

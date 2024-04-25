@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import AppProvider  from './AppProvider';
+import AppProvider  from './routes/AppProvider';
 import AppRouter from './routes/AppRouter';
+import { useUserContext } from './context/UserContext';
 import './App.css'
 
 function App() {
+  const { setUser } = useUserContext();
+
+  useEffect(() => {
+    const storedUser = localStorage.getItem('user');
+    if (storedUser) {
+      setUser(JSON.parse(storedUser));
+    }
+  }, [setUser]);
+
 
   return (
     <>

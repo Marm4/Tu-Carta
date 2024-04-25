@@ -38,3 +38,7 @@ input {
   font-family: "Inter", sans-serif;
   
 }
+
+button:hover {
+  border-color: black; 
+}
