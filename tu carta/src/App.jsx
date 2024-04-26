@@ -3,7 +3,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import AppProvider  from './routes/AppProvider';
 import AppRouter from './routes/AppRouter';
 import { useUserContext } from './context/UserContext';
-import './App.css'
 
 function App() {
   const { setUser } = useUserContext();

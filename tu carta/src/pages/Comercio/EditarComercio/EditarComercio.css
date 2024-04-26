@@ -3,7 +3,7 @@
     justify-content: space-between; 
     width: 85vw;
     text-align: ce;
-    margin: 10vh 1vw 0 6vw;
+    margin: 5vh 1vw 0 6vw;
     padding: 1vw 1vw 0 0;
     border: none;
     border-radius: 5px;
@@ -29,11 +29,11 @@
     width: 25vw;
 }
 
-.containerTwo p{
+.containerOne p{
     margin-top: 0px;
 }
 
-.containerTwo label{
+.containerOne label{
     margin-bottom: 50px;
     
     width: 1px;
@@ -70,8 +70,8 @@
 }
 
 .containerTwo button{
-    margin: 40vh 0 0 0.1vw;
-    width: 23.8vw;
+    margin: 25vh 0 1.5vw 0vw;
+    width: 25vw;
     height: 6vh;
     font-size: 20px;
     font-weight: bold;

@@ -1,19 +1,26 @@
 import React, { createContext, useState, useContext } from 'react';
 
 const UserContext = createContext();
+const ComerciosContext = createContext();
 
 export const useUserContext = () => {
   return useContext(UserContext);
 };
 
+export const useComerciosContext = () => {
+  return useContext(ComerciosContext);
+};
 
-export const UserProvider = ({children}) => { 
+export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
+  const [comercios, setComercios] = useState([]);
 
-  return(
+  return (
     <UserContext.Provider value={{ user, setUser }}>
+      <ComerciosContext.Provider value={{ comercios, setComercios }}>
         {children}
-    </UserContext.Provider> 
+      </ComerciosContext.Provider>
+    </UserContext.Provider>
   );
 };
 

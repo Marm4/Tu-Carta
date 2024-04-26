@@ -1,0 +1,44 @@
+.comercios-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vh;
+
+}
+
+.card-container{
+    display: flex; 
+    flex-direction: row;   
+}
+
+
+button.agregar-button{
+    width: 20vw;
+}
+
+
+.logout {
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+    font-family: 'Leckerli One', cursive;
+    font-size: 17px;
+    margin-top: 2.5vh;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    margin-right: 20px; 
+    box-sizing: border-box;
+    outline: none;
+    font-weight: bold;
+  }
+
+   
+    
+  .link {
+    text-decoration: none;
+    color: black;
+    margin-right: 2rem;
+  }

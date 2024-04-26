@@ -1,0 +1,21 @@
+[debug] [2024-04-25T23:32:19.396Z] ----------------------------------------------------------------------
+[debug] [2024-04-25T23:32:19.399Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\marco\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-04-25T23:32:19.399Z] CLI Version:   13.7.5
+[debug] [2024-04-25T23:32:19.399Z] Platform:      win32
+[debug] [2024-04-25T23:32:19.399Z] Node Version:  v20.12.2
+[debug] [2024-04-25T23:32:19.400Z] Time:          Thu Apr 25 2024 20:32:19 GMT-0300 (hora estándar de Argentina)
+[debug] [2024-04-25T23:32:19.400Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-25T23:32:19.405Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-25T23:32:19.406Z] > authorizing via signed-in user (marcomasciulli96@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\marco\OneDrive\Escritorio\TuCarta
+

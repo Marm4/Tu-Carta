@@ -1,0 +1,45 @@
+.opciones-container{
+    margin: 15vh 0 0 5vw;
+}
+
+.datos-comercio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2vh 1vw 2vh 1vw;
+    width: 35vw;
+    height: 15vh;
+
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    color: black;
+    cursor: pointer;
+    padding: 0 2vw 0 2vw;
+    border: 1px solid #ccc;
+}
+
+.nombre-id{
+    width: 20vw;
+}
+
+.platos button{
+    width: 39vw;
+    height: 15vh;
+    border: none;
+    margin: 2vh 1vw 2vh 1vw;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    color: black;
+    cursor: pointer;
+    padding: 0 2vw 0 2vw;
+    border: 1px solid #ccc;
+}
+
+.link-decoration{
+    text-decoration: none;
+    color: black;
+}

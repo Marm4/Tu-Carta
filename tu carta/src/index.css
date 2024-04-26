@@ -36,9 +36,52 @@ input {
   background-color: #F1F1F1;
   color: black;
   font-family: "Inter", sans-serif;
-  
 }
 
 button:hover {
+  border-color: black; 
+}
+
+.atras {
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center; 
+  font-family: 'Leckerli One', cursive;
+  margin-top: 2.5vh;
+  margin-right: 2rem;
+}
+
+.atras button{
+  padding: 0px;
+  margin-top: 0px;
+  border: none;
+  border-radius: 0px;
+  background-color: white;
+  box-shadow: 0px 0px 0px white; 
+  color: black;
+  cursor: pointer;
+  border: 0;
+  transition: border-color 0.6s ease;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  margin-right: 20px; 
+  box-sizing: border-box;
+  outline: none;
+  font-weight: bold;
+}
+
+.general-container{
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+  color: black;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  transition: border-color 0.6s ease;
+}
+
+.general-container:hover{
   border-color: black; 
 }
