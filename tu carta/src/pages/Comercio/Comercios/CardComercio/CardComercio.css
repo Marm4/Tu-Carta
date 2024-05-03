@@ -1,11 +1,12 @@
-.card{
+  .card{
     display: flex; 
-    justify-content: space-between; 
+    justify-content: flex-start; 
     flex-direction: column;
-    width: 20vw;
+    width: 25vw;
+    max-width: 420px;
     text-align: center;
     height: 65vh;
-    padding: 1vw 1vw 0 0;
+    padding: 1vh 0.5vw 1vh 0.5vw;
     border: none;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -13,5 +14,103 @@
     color: black;
     cursor: pointer;
     border: 1px solid #ccc;
-    margin: 0 5vw 5vh 5vw;
+    
+    animation: lightBurst 1s ease-in-out forwards;
+}
+
+
+.banner{
+    width: 25vw; 
+    max-width: 420px;
+    height: 25vh; 
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.nombre-imagen-container{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+
+.logo-parameters{
+    display: flex;
+    flex-direction: row;
+    width: 8vw;
+    height: 6vw;
+}
+
+.logo-parameters img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    
+}
+
+.section-nombre-direccion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 1vw;
+}
+
+.section-nombre-direccion h2 {
+    padding-top: 20px;
+}
+
+.section-nombre-direccion p {
+    width: 10vw;
+    text-align: start;
+    margin: 0;
+}
+
+.icon-location {
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    margin-top: 9px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='black' d='M10 20S3 10.87 3 7a7 7 0 1 1 14 0c0 3.87-7 13-7 13m0-11a2 2 0 1 0 0-4a2 2 0 0 0 0 4'/%3E%3C/svg%3E");
+  }
+
+  .icon-time {
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    margin-top: 19px;
+    margin-right: 10px;
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m11-9c0 6.075-4.925 11-11 11S1 18.075 1 12S5.925 1 12 1s11 4.925 11 11m-8 4.414l-4-4V5.5h2v6.086L16.414 15z'/%3E%3C/svg%3E");
+  }
+
+
+  .icon-phone{
+    display: inline-block;
+    width: 1.4em;
+    height: 1.4em;
+    margin-top: 19px;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='black' d='m19.23 15.26l-2.54-.29a1.99 1.99 0 0 0-1.64.57l-1.84 1.84a15.045 15.045 0 0 1-6.59-6.59l1.85-1.85c.43-.43.64-1.03.57-1.64l-.29-2.52a2.001 2.001 0 0 0-1.99-1.77H5.03c-1.13 0-2.07.94-2 2.07c.53 8.54 7.36 15.36 15.89 15.89c1.13.07 2.07-.87 2.07-2v-1.73c.01-1.01-.75-1.86-1.76-1.98'/%3E%3C/svg%3E");
+      
+  }
+
+  .features-container{
+    padding: 20px 0 0 20px;
+  }
+
+  .card p { 
+    font-size:15px;
+    font-weight: 500;
+    
 }

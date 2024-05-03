@@ -1,0 +1,37 @@
+.card-producto-container{
+    height: 18vh;
+    border-bottom: 1px solid gray;
+   margin: 0vh 0 25px 0 ;
+}
+
+.card-producto-nombre{
+    margin:0vh 0 0 1vw;
+    padding:0;
+}
+
+.card-producto-descripcion{
+    margin:0 0 2vh 1vw;
+    padding:0;
+    
+}
+
+.card-producto-container p {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+
+.imagen-parameters{
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    height: 6vw;
+}
+
+.imagen-parameters img{
+    width: 200px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+}

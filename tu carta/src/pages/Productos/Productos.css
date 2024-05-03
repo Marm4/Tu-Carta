@@ -1,0 +1,178 @@
+.productos-container{
+    display: flex;
+    flex-direction: column;
+    margin: 12vh 2vw 0 1vw;
+    padding: 0 3.3vw 0 2vw;
+    
+    width: 85vw;
+    
+}
+
+.seccion-productos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+    width: 60vw;
+    height: 10vh;
+}
+
+
+
+.left-container input{
+    width: 20vw;
+    height: auto;
+}
+
+.producto-descripcion{  
+    padding-bottom: 13vh;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+     
+}
+
+.nuevo-producto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.right-container{
+    margin-left: 2.2vw;
+}
+
+.miCheckBox{
+    width: 40px;
+    margin-top: 20px;
+    
+}
+
+.containerCheckBox2{
+    display: inline-flex; 
+    align-items: center;
+    height: 5vh;  
+    width: 15vw;
+}
+
+.checkbox-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkbox-container{
+    display:flex;
+    flex-direction: column;
+    max-width: 15vw;
+}
+
+.productos-container button{
+    align-self: center;
+    margin-top:6vh;
+    width: 25vw;
+    height: 6vh;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #3625F8;
+    color: white;
+}
+
+.productos{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.blur {
+    filter: blur(5px); 
+}
+
+.productos-guardados{
+    display: flex;
+    flex-direction: column;
+    padding: 1vh 2vw 1vh 2vw;
+    margin: 12vh 1vw 0 0vw;
+    width: 40vw;
+    height: 82vh;
+    
+}
+
+.productos-guardados input{
+    width: 20vw;
+}
+
+.atributos{
+    margin-left: 0.5vw;
+}
+
+.seccion-productos .button-selected{
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.seccion-productos button{
+    width: 25vw;
+    height: 5vh;
+    background-color: white;
+    color: black;
+    margin:0 1vw 0 1vw;
+    padding:0 ;
+}
+
+.popup-producto{
+    position: absolute;
+    width: 95vw;
+    height: 90vh;
+    margin:0;
+    padding:0;
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: blur(25px);
+   
+    
+}
+
+
+.popup-producto-div {
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    width: 25vw;
+    height: 25vh;
+    transform: translate(-50%, -50%); 
+    padding: 2vh 2vw 2vh 2vw;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    color: black;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    transition: border-color 0.6s ease;
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    
+}
+
+.popup-button-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+}
+
+.popup-producto-div button {
+    width: 9vw;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 2vh 0 2vh 0;
+}
+
+.oculto, .oculto * {
+    display: none;
+}
+
+.producto-guardar-btn{
+    position: absolute;
+    top: 80%; 
+    left: 23%; 
+}
+

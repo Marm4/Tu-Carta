@@ -1,14 +1,17 @@
 .header {
-  width: 25vw;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  background-color: transparent;
+  padding: 1vh 0 1vh 0;
+  
+  border-bottom: 1px solid gray;
   color: black;
+  background-color: white;
+
 }
   
 .left-section {
@@ -16,14 +19,40 @@
   font-family: 'Leckerli One', cursive;
   font-size: 32px;
 }
-  
-
-
-
-
-  .leckerli-one-regular {
+ .leckerli-one-regular {
     font-family: "Leckerli One", cursive;
     font-weight: 400;
     font-style: normal;
-  }
+ }
 
+ .button-title{
+  border: none;
+  box-shadow: none;
+  margin-left: 2rem;
+  font-family: 'Leckerli One', cursive;
+  font-size: 32px;
+  margin: 0;
+ }
+
+ .link {
+  text-decoration: none;
+  color: black;
+  margin-right: 2rem;
+}
+
+
+.logout {
+  display: flex; 
+  justify-content: flex-end; 
+  align-items: center; 
+  font-family: 'Leckerli One', cursive;
+  font-size: 17px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  margin-right: 20px; 
+  box-sizing: border-box;
+  outline: none;
+  font-weight: bold;
+}

@@ -47,7 +47,7 @@ button:hover {
   justify-content: flex-end; 
   align-items: center; 
   font-family: 'Leckerli One', cursive;
-  margin-top: 2.5vh;
+  margin-top: 3.5vh;
   margin-right: 2rem;
 }
 
@@ -85,3 +85,47 @@ button:hover {
 .general-container:hover{
   border-color: black; 
 }
+
+.input-error {
+  border: 1px solid red; 
+}
+
+h2{
+  padding:0;
+  margin:10px 0 0 0;
+}
+
+
+.carga-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Color blanco semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos para el círculo de carga */
+.carga-circle {
+  border: 4px solid #f3f3f3; /* Color del borde del círculo */
+  border-top: 4px solid #3498db; /* Color del borde superior del círculo */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite; /* Animación de giro */
+}
+
+/* Animación de giro */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+}
+

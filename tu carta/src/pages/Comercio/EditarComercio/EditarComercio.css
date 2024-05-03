@@ -3,7 +3,7 @@
     justify-content: space-between; 
     width: 85vw;
     text-align: ce;
-    margin: 5vh 1vw 0 6vw;
+    margin: 4vh 1vw 0 6vw;
     padding: 1vw 1vw 0 0;
     border: none;
     border-radius: 5px;
@@ -11,7 +11,6 @@
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
     color: black;
     cursor: pointer;
-    
     border: 1px solid #ccc;
 }
 
@@ -43,7 +42,7 @@
     display: flex;
     align-items: flex-start; /* Alinea verticalmente en la parte superior */
     justify-content: flex-start; /* Alinea horizontalmente en la izquierda */
-    height: 8.8vw;
+    padding-bottom: 120px;
     word-wrap: break-word;
 }
 
@@ -65,12 +64,11 @@
 .containerCheckBox label{
     margin-top: 5vh;
     margin-left: 0.5vw;
-    
     width: 8vw;
 }
 
 .containerTwo button{
-    margin: 25vh 0 1.5vw 0vw;
+    margin: 10vh 0 0vw 0vw;
     width: 25vw;
     height: 6vh;
     font-size: 20px;
@@ -83,3 +81,18 @@
 .telefono{
     padding-top: 25px;
 }
+
+.id-text{
+    margin-left: 4px;
+    margin-bottom: 20px;
+}
+
+.no-padding{
+    margin-bottom: 8px;
+}
+
+.error-inf{
+    margin: 15px 0 15px 0;
+    color: red;
+}
+

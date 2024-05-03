@@ -43,3 +43,20 @@
     text-decoration: none;
     color: black;
 }
+
+.logo-opciones-container{
+    display: flex;
+    flex-direction: row;
+    width: 8vw;
+    height: 6vw;
+}
+.logo-opciones-container img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.link-decoration p {
+    margin:0;
+    padding-bottom: 1vh
+}

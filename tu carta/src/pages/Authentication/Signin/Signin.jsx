@@ -71,15 +71,15 @@ const Signin = () => {
             <div className="signin-box">
                 <h2>Tu Carta</h2>
     
-                <input type="email" placeholder="Email" onChange={handleChange(setEmail)}/>
+                <input  maxlength="25" type="email" placeholder="Email" onChange={handleChange(setEmail)}/>
                 
                 <div className='password-container'>
-                    <input type={showPassword ? 'text' : 'password'} placeholder="Contraseña" className={!passwordsMatch ? 'input-error' : ''} onChange={handleChange(setPassword)}/>
+                    <input maxlength="25" type={showPassword ? 'text' : 'password'} placeholder="Contraseña" className={!passwordsMatch ? 'input-error' : ''} onChange={handleChange(setPassword)}/>
                     <div className="eye" onClick={() => togglePasswordVisibility(setShowPassword)} />
                 </div>
                 
                 <div className='password-container'>
-                    <input type={showRepeatPassword ? 'text' : 'password'} placeholder="Repetir contraseña" className={!passwordsMatch ? 'input-error' : ''} onChange={handleChange(setRepeatPassword)}/>
+                    <input maxlength="25" type={showRepeatPassword ? 'text' : 'password'} placeholder="Repetir contraseña" className={!passwordsMatch ? 'input-error' : ''} onChange={handleChange(setRepeatPassword)}/>
                     <div className="eye" onClick={() => togglePasswordVisibility(setRepeatShowPassword)}/>
                 </div>
                 

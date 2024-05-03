@@ -4,7 +4,7 @@ const Mapa = ({ onMapSelect }) => {
   const [selectedLocation, setSelectedLocation] = useState(null);
   const [searchLocation, setSearchLocation] = useState('');
   const [map, setMap] = useState(null);
-  const [clickListener, setClickListener] = useState(null);
+  const [marker, setMarker] = useState(null);
 
   useEffect(() => {
     const loadScript = () => {
@@ -26,18 +26,23 @@ const Mapa = ({ onMapSelect }) => {
     });
 
     setMap(mapa);
-    setClickListener(clickListener);
   };
 
   const placeMarker = (location, mapa) => {
     setSelectedLocation(location);
     onMapSelect(location);
-    const marker = new window.google.maps.Marker({
+
+    // Eliminar el marcador anterior si existe
+    if (marker) {
+      marker.setMap(null);
+    }
+
+    // Crear un nuevo marcador y establecerlo como el marcador actual
+    const newMarker = new window.google.maps.Marker({
       position: location,
       map: mapa
     });
-
-    window.google.maps.event.removeListener(clickListener);
+    setMarker(newMarker);
   };
 
   const handleSearch = () => {
@@ -48,6 +53,8 @@ const Mapa = ({ onMapSelect }) => {
       if (status === 'OK' && results[0]) {
         const location = results[0].geometry.location;
         map.setCenter(location);
+
+        // Llamar a placeMarker para colocar el marcador en la nueva ubicación
         placeMarker(location, map);
       } else {
         console.log('Geocode was not successful for the following reason:', status);
@@ -71,7 +78,6 @@ const Mapa = ({ onMapSelect }) => {
         onKeyPress={handleKeyPress} 
       />
       <div id="map" style={{ height: '350px', width: '100%' }}></div>
-      
     </div>
   );
 }

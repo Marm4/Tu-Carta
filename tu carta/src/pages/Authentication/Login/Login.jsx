@@ -47,8 +47,8 @@ const Login = () => {
         <h2>Bienvenido</h2>
         
         <div className='input-box'>
-          <input type="email" placeholder="Email" onChange={handleChange(setEmail)} />
-          <input type="password" placeholder="Contraseña" onChange={handleChange(setPassword)} />
+          <input maxlength="25" type="email" placeholder="Email" onChange={handleChange(setEmail)} />
+          <input maxlength="25" type="password" placeholder="Contraseña" onChange={handleChange(setPassword)} />
         </div>
         
         <button className="login-button" onClick={handleLogin}>Iniciar sesión</button>
